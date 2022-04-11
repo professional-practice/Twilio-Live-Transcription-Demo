@@ -3,9 +3,16 @@ Explanation of application
 Requirements
 ------------
 Twilio Account and Phone Number
+
 ngrok - Cross-platform application to expose local server post to the internet (moreso for demo purposes)
+
 Google Cloud Account (which has Google Speech-To-Text API enabled, and a service account generated with an access key)
+
 Google Cloud SDK
+
+Steps
+--------------
+(to be detailed)
 
 Dependencies
 ------------
