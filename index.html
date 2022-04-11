@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Live Transcription with Twilio Media Streams</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <img src="https://olasteams.com/wp-content/uploads/2021/08/OLAS_WebLogoBlack.png">
+  <div id="backgroundimg"> </div>
+  <div id="container">
+    <h1>Live Transcription with Twilio Media Streams</h1>
+    <h3>
+      Call your Twilio Number, start talking and watch your words magically
+      appear.
+    </h3>
+  </div>
+  <textarea id="transcription-container" rows="25" cols="20"></textarea>
+    <script>
+      document.addEventListener("DOMContentLoaded", event => {
+        webSocket = new WebSocket("ws://localhost:8080");
+        webSocket.onmessage = function(msg) {
+          const data = JSON.parse(msg.data);
+          if (data.event === "interim-transcription") {
+            document.getElementById("transcription-container").value +=
+              data.text;
+          }
+        };
+      });
+    </script>
+</body>
+
+</html>
