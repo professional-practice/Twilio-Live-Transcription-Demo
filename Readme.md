@@ -3,15 +3,25 @@ Explanation of application
 Requirements
 ------------
 Twilio Account and Phone Number
+
 ngrok - Cross-platform application to expose local server post to the internet (moreso for demo purposes)
+
 Google Cloud Account (which has Google Speech-To-Text API enabled, and a service account generated with an access key)
+
 Google Cloud SDK
+
+Steps
+--------------
+(to be detailed)
 
 Dependencies
 ------------
 Express
+
 Websocket
+
 Google Cloud Speech-To-Text
+
 dot.env
 
 1. When a call comes through to our twilio number it make a HTTP POST request to a ngrok url, tunneling to the localhost
@@ -21,4 +31,4 @@ dot.env
 
 Problems
 --------
-We can currently retrieve both streams, however it is extremely slow and not as reliable as we hoped
+We can currently retrieve both streams, however it is extremely slow and not as reliable as we hoped. The application also throws an error in the console after a certain length of time on the call. This is an issue we are currently trying to fix.
