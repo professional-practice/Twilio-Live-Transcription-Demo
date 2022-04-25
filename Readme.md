@@ -15,13 +15,13 @@ Google Cloud
 ------------
 1. Create a Google Cloud account (https://cloud.google.com/)
 
-2. Set-up a new Google Cloud Project.
+2. Set-up a new Google Cloud Project
 
-3. Navigate to the **APIs and Services** Enable the Google Speech-To-Text API for your newly created GCP.
+3. Navigate to the **APIs and Services** and enable the Google Speech-To-Text API for your newly created GCP
 
-4. Create a service account under the Google Speech-To-Text API. This allows us to create a way to autenticate access to use the transcription service.
+4. Create a service account under the Google Speech-To-Text API. This allows us to create a way to autenticate access to use the transcription service
 
-5. Navigate to your service account and open the **Keys** section. Create a new key as a JSON format. This will then download the necessary credentials to your computer.
+5. Navigate to your service account and open the **Keys** section. Create a new key as a JSON format. This will then download the necessary credentials to your computer
 
 6. In the .env file within this folder, update the field with the location of your downloaded key. Ensure this is saved as an `.env` file
 
