@@ -80,8 +80,9 @@ app.post("/", (req, res) => {
       <Start>
         <Stream url="wss://${req.headers.host}/"/>
       </Start>
-      <Dial>+353 87 904 4178</Dial>
+      <Dial>"Place number in which you want to re-direct to here"</Dial>
       <Say>This is a demo application of Twilio Media Streams in working</Say>
+      <Pause length="60" />
     </Response>
   `);
 });
